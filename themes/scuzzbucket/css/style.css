@@ -2,6 +2,8 @@ body {
   margin: 0;
   font: 16px/1.5em "Helvetica Neue", helvetica, Arial, sans-serif;
   letter-spacing: 0.03em;
+  background-color: #fff;
+  color: #ccc;
 }
 
 a:link, a:visited {
@@ -169,13 +171,6 @@ div.status {
   color: #336600;
   background: #ccff88;
   border-color: #bbee77;
-}
-
-#header, #footer,
-#sidebar-first,
-#sidebar-second,
-#navigation {
-  background: rgba(170, 170, 170, 0.2);
 }
 
 * {
