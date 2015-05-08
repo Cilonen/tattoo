@@ -7,9 +7,20 @@
 // Import variables and mixins to be used.
 @import _config.sass
 @import _sprites.sass
+@import _fonts.sass
 
 // Custom code here.
-
+body
+  background-color: #000
+a:link, a:visited
+  color: #ccc
+ul.main-menu li
+  a:hover, a.active
+    color: #ccc
+    text-decoration: underline
+#navigation
+  text-align: center
+  font-family: 'clarkeregular'
 // Import wildcard files and folders.
 @import "blocks/*"
 @import "elements/*"

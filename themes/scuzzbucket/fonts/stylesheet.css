@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: 'clarkeblack_oblique';
+    src: url('CLARKE black oblique v5.3-webfont.eot');
+    src: url('CLARKE black oblique v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE black oblique v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE black oblique v5.3-webfont.woff') format('woff'),
+         url('CLARKE black oblique v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE black oblique v5.3-webfont.svg#clarkeblack_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'clarkeblack';
+    src: url('CLARKE black v5.3-webfont.eot');
+    src: url('CLARKE black v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE black v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE black v5.3-webfont.woff') format('woff'),
+         url('CLARKE black v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE black v5.3-webfont.svg#clarkeblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'clarkelight_oblique';
+    src: url('CLARKE light oblique v5.3-webfont.eot');
+    src: url('CLARKE light oblique v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE light oblique v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE light oblique v5.3-webfont.woff') format('woff'),
+         url('CLARKE light oblique v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE light oblique v5.3-webfont.svg#clarkelight_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'clarkelight';
+    src: url('CLARKE light v5.3-webfont.eot');
+    src: url('CLARKE light v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE light v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE light v5.3-webfont.woff') format('woff'),
+         url('CLARKE light v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE light v5.3-webfont.svg#clarkelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'clarkemedium_oblique';
+    src: url('CLARKE medium oblique v5.3-webfont.eot');
+    src: url('CLARKE medium oblique v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE medium oblique v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE medium oblique v5.3-webfont.woff') format('woff'),
+         url('CLARKE medium oblique v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE medium oblique v5.3-webfont.svg#clarkemedium_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'clarkemedium';
+    src: url('CLARKE medium v5.3-webfont.eot');
+    src: url('CLARKE medium v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE medium v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE medium v5.3-webfont.woff') format('woff'),
+         url('CLARKE medium v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE medium v5.3-webfont.svg#clarkemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'clarkeoblique';
+    src: url('CLARKE regular oblique v5.3-webfont.eot');
+    src: url('CLARKE regular oblique v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE regular oblique v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE regular oblique v5.3-webfont.woff') format('woff'),
+         url('CLARKE regular oblique v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE regular oblique v5.3-webfont.svg#clarkeoblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'clarkeregular';
+    src: url('CLARKE regular v5.3-webfont.eot');
+    src: url('CLARKE regular v5.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CLARKE regular v5.3-webfont.woff2') format('woff2'),
+         url('CLARKE regular v5.3-webfont.woff') format('woff'),
+         url('CLARKE regular v5.3-webfont.ttf') format('truetype'),
+         url('CLARKE regular v5.3-webfont.svg#clarkeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

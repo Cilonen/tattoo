@@ -5,19 +5,19 @@
 }
 
 .container {
-  max-width: 68em;
+  max-width: 60em;
   margin-left: auto;
   margin-right: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 68em;
+  width: 60em;
 }
 .container:after {
   content: "";
   display: table;
   clear: both;
 }
-@media screen and (max-width: 1088px) {
+@media screen and (max-width: 960px) {
   .container {
     width: auto;
   }
@@ -26,7 +26,7 @@
 .no-sidebars #content {
   float: left;
   display: block;
-  margin-right: 1.69492%;
+  margin-right: 2.12766%;
   width: 100%;
 }
 .no-sidebars #content:last-child {
@@ -57,8 +57,8 @@
 .one-sidebar.sidebar-second #content {
   float: left;
   display: block;
-  margin-right: 1.69492%;
-  width: 72.88136%;
+  margin-right: 2.12766%;
+  width: 91.48936%;
 }
 .one-sidebar.sidebar-second #content:last-child {
   margin-right: 0;
@@ -88,9 +88,9 @@
 .one-sidebar.sidebar-first #content {
   float: left;
   display: block;
-  margin-right: 1.69492%;
-  width: 79.66102%;
-  margin-left: 20.33898%;
+  margin-right: 2.12766%;
+  width: 100%;
+  margin-left: 25.53191%;
 }
 .one-sidebar.sidebar-first #content:last-child {
   margin-right: 0;
@@ -122,9 +122,9 @@
 .two-sidebars #content {
   float: left;
   display: block;
-  margin-right: 1.69492%;
-  width: 52.54237%;
-  margin-left: 20.33898%;
+  margin-right: 2.12766%;
+  width: 65.95745%;
+  margin-left: 25.53191%;
 }
 .two-sidebars #content:last-child {
   margin-right: 0;
@@ -157,15 +157,15 @@
 #sidebar-first {
   float: left;
   display: block;
-  margin-right: 1.69492%;
-  width: 18.64407%;
-  margin-left: -74.57627%;
+  margin-right: 2.12766%;
+  width: 23.40426%;
+  margin-left: -93.61702%;
 }
 #sidebar-first:last-child {
   margin-right: 0;
 }
 .sidebar-first #sidebar-first {
-  margin-left: -101.69492%;
+  margin-left: -127.65957%;
 }
 @media screen and (max-width: 768px) {
   #sidebar-first {
@@ -201,8 +201,8 @@
 #sidebar-second {
   float: left;
   display: block;
-  margin-right: 1.69492%;
-  width: 25.42373%;
+  margin-right: 2.12766%;
+  width: 31.91489%;
   margin-left: 0%;
 }
 #sidebar-second:last-child {
