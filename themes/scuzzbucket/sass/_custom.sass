@@ -14,13 +14,71 @@ body
   background-color: #000
 a:link, a:visited
   color: #ccc
-ul.main-menu li
-  a:hover, a.active
-    color: #ccc
-    text-decoration: underline
-#navigation
+a:hover, a.active
+  text-decoration: none
+  color: #fff
+#page
+  margin-top: 64px
+// Header
+#header
+  position: fixed
+  background-color: #000
+  top: 0
+  left: 0
+  right: 0
+  z-index: 9999
+#block-menu_block-2, #block-menu_block-3
   text-align: center
   font-family: 'clarkeregular'
+  font-size: 22px
+  ul.menu
+    li
+      display: inline-block
+      a
+        transition: all 0.3s
+      a:hover, a.active
+        color: #fff
+#name-and-slogan
+  text-align: center
+  margin: 100px 0 60px
+#site-name
+  padding-bottom: 0
+  a
+    font-size: 0
+    display: inline-block
+    width: 575px
+    background: url(../logo.svg) no-repeat 0 0
+    height: 161px
+    background-size: 100%
+#header-region
+  text-align: center
+  .block
+    display: inline-block
+// Artists Nav
+#block-views-artists-block
+  text-align: center
+  margin-bottom: 65px
+  .views-row
+    display: inline-block
+    margin: 0 20px
+    font-family: 'clarkeregular'
+    position: relative
+    font-size: 22px
+    &:after
+      content: "+"
+      position: absolute
+      top: 0px
+      right: -30px
+      font-size: 38px
+      color: #fff
+      line-height: 22px
+    a
+      transition: all 0.3s
+      &:hover
+        color: #fff
+        text-decoration: none
+  .views-row-last:after
+    display: none
 // Import wildcard files and folders.
 @import "blocks/*"
 @import "elements/*"

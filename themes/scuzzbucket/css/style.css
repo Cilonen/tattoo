@@ -243,14 +243,92 @@ a:link, a:visited {
   color: #ccc;
 }
 
-ul.main-menu li a:hover, ul.main-menu li a.active {
-  color: #ccc;
-  text-decoration: underline;
+a:hover, a.active {
+  text-decoration: none;
+  color: #fff;
 }
 
-#navigation {
+#page {
+  margin-top: 64px;
+}
+
+#header {
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#block-menu_block-2, #block-menu_block-3 {
   text-align: center;
   font-family: "clarkeregular";
+  font-size: 22px;
+}
+#block-menu_block-2 ul.menu li, #block-menu_block-3 ul.menu li {
+  display: inline-block;
+}
+#block-menu_block-2 ul.menu li a, #block-menu_block-3 ul.menu li a {
+  transition: all 0.3s;
+}
+#block-menu_block-2 ul.menu li a:hover, #block-menu_block-2 ul.menu li a.active, #block-menu_block-3 ul.menu li a:hover, #block-menu_block-3 ul.menu li a.active {
+  color: #fff;
+}
+
+#name-and-slogan {
+  text-align: center;
+  margin: 100px 0 60px;
+}
+
+#site-name {
+  padding-bottom: 0;
+}
+#site-name a {
+  font-size: 0;
+  display: inline-block;
+  width: 575px;
+  background: url(../logo.svg) no-repeat 0 0;
+  height: 161px;
+  background-size: 100%;
+}
+
+#header-region {
+  text-align: center;
+}
+#header-region .block {
+  display: inline-block;
+}
+
+#block-views-artists-block {
+  text-align: center;
+  margin-bottom: 65px;
+}
+#block-views-artists-block .views-row {
+  display: inline-block;
+  margin: 0 20px;
+  font-family: "clarkeregular";
+  position: relative;
+  font-size: 22px;
+}
+#block-views-artists-block .views-row:after {
+  content: "+";
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  font-size: 38px;
+  color: #fff;
+  line-height: 22px;
+}
+#block-views-artists-block .views-row a {
+  transition: all 0.3s;
+}
+#block-views-artists-block .views-row a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#block-views-artists-block .views-row-last:after {
+  display: none;
 }
 
 * {
