@@ -19,6 +19,8 @@ a:hover, a.active
   color: #fff
 #page
   margin-top: 64px
+  .admin-menu &
+    margin-top: 85px
 // Header
 #header
   position: fixed
@@ -26,7 +28,9 @@ a:hover, a.active
   top: 0
   left: 0
   right: 0
-  z-index: 9999
+  z-index: 99
+  .admin-menu &
+    top: 21px
 #block-menu_block-2, #block-menu_block-3
   text-align: center
   font-family: 'clarkeregular'
@@ -34,10 +38,19 @@ a:hover, a.active
   ul.menu
     li
       display: inline-block
+      margin: 0
+      padding: 0
       a
         transition: all 0.3s
+        margin: 0 15px
       a:hover, a.active
         color: #fff
+#block-menu_block-2
+  ul.menu li a
+    margin-right: 14px
+#block-menu_block-3
+  ul.menu li a
+    margin-left: 14px
 #name-and-slogan
   text-align: center
   margin: 100px 0 60px
@@ -54,6 +67,19 @@ a:hover, a.active
   text-align: center
   .block
     display: inline-block
+#block-boxes-logo
+  margin-top: 15px
+
+  p
+    margin: 0
+  a.home-link
+    font-size: 0
+    background: url(../logo.svg) no-repeat 0 0
+    display: block
+    background-size: 100%
+    width: 0px
+    height: 32px
+    background-position: 0 1px
 // Artists Nav
 #block-views-artists-block
   text-align: center
@@ -79,6 +105,13 @@ a:hover, a.active
         text-decoration: none
   .views-row-last:after
     display: none
+// Artist Nodes
+.group-left
+  .field-name-field-photo
+    img
+      width: 320px
+      height: auto
+.group-right
 // Import wildcard files and folders.
 @import "blocks/*"
 @import "elements/*"

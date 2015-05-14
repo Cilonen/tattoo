@@ -35,6 +35,7 @@ stylesheets[print][] = css/print.css
 ; Scripts
 scripts[] = js/build/scripts.js
 scripts[] = js/build/modernizr.js
+scripts[] = js/build/skrollr.js
 
 settings[scuzzbucket_tabs] = 1
 settings[scuzzbucket_breadcrumb] = 1

@@ -35,6 +35,7 @@ Drupal.behaviors.basic = {
 
     $(document).ready(function() {
       // Execute code once the DOM is ready.
+      var s = skrollr.init();
     });
   }
 };
