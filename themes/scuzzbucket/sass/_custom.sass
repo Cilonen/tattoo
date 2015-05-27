@@ -53,7 +53,7 @@ a:hover, a.active
     margin-left: 14px
 #name-and-slogan
   text-align: center
-  margin: 100px 0 60px
+  margin: 165px 0 75px
 #site-name
   padding-bottom: 0
   a
@@ -83,13 +83,15 @@ a:hover, a.active
 // Artists Nav
 #block-views-artists-block
   text-align: center
-  margin-bottom: 65px
+  z-index: 99
+  background-color: #000
+  height: 30px
+  font-size: 22px
   .views-row
     display: inline-block
     margin: 0 20px
     font-family: 'clarkeregular'
     position: relative
-    font-size: 22px
     &:after
       content: "+"
       position: absolute
@@ -106,12 +108,84 @@ a:hover, a.active
   .views-row-last:after
     display: none
 // Artist Nodes
-.group-left
-  .field-name-field-photo
-    img
-      width: 320px
-      height: auto
-.group-right
+.node-type-artist
+  .group-header
+    .field-name-title
+      font-family: 'clarkelight'
+  .group-left
+    width: 33.333%
+    .field-name-field-photo
+      img
+        width: 100%
+        max-width: 320px
+        height: auto
+  .group-right
+    width: 66.666%
+    padding-left: 35px
+  #block-system-main
+    margin-bottom: 65px
+// News
+#block-views-news-block
+  padding-top: 65px
+  max-width: 600px
+  margin: 0 auto
+  .views-row
+    border-bottom: 1px solid #ccc
+    padding-bottom: 15px
+    margin-bottom: 45px
+    .field-name-title
+      font-family: 'clarkelight'
+    .field-name-field-images
+      margin-bottom: 25px
+.field-name-social-links
+  display: inline-block
+  width: 100%
+  margin-bottom: 10px
+  .views-row
+    .views-field
+      display: inline-block
+      float: left
+      margin-right: 15px
+      a
+        display: inline-block
+        font-size: 0
+        color: #000
+        height: 35px
+        width: 35px
+        position: relative
+        &:before
+          font-family: 'FontAwesome'
+          color: #ccc
+          position: absolute
+          font-size: 35px
+          transition: all 0.3s
+        &:hover:before
+          color: #fff
+    .views-field-field-instagram a:before
+      content: "\f16d"
+    .views-field-field-tumblr a:before
+      content: "\f174"
+    .views-field-field-facebook a:before
+      content: "\f082"
+    .views-field-field-twitter a:before
+      content: "\f081"
+    .views-field-field-email a:before
+      content: "\f199"
+// Not Front
+.not-front
+  #block-system-main
+    padding-top: 65px
+// About
+.section-about,
+.section-store
+  #block-system-main
+    max-width: 600px
+    margin: 0 auto
+.section-store
+  .field-name-body
+    h1
+      text-align: center
+      font-family: 'clarkeregular'
 // Import wildcard files and folders.
 @import "blocks/*"
 @import "elements/*"

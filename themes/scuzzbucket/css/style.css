@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font: 16px/1.5em "Helvetica Neue", helvetica, Arial, sans-serif;
@@ -184,7 +185,7 @@ div.status {
   src: url("../fonts/CLARKE black oblique v5.3-webfont.eot");
   src: url("../fonts/CLARKE black oblique v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE black oblique v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE black oblique v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE black oblique v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE black oblique v5.3-webfont.svg#clarkeblack_oblique") format("svg");
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: "clarkeblack";
@@ -198,7 +199,7 @@ div.status {
   src: url("../fonts/CLARKE light oblique v5.3-webfont.eot");
   src: url("../fonts/CLARKE light oblique v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE light oblique v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE light oblique v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE light oblique v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE light oblique v5.3-webfont.svg#clarkelight_oblique") format("svg");
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: "clarkelight";
@@ -212,7 +213,7 @@ div.status {
   src: url("../fonts/CLARKE medium oblique v5.3-webfont.eot");
   src: url("../fonts/CLARKE medium oblique v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE medium oblique v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE medium oblique v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE medium oblique v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE medium oblique v5.3-webfont.svg#clarkemedium_oblique") format("svg");
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: "clarkemedium";
@@ -232,6 +233,13 @@ div.status {
   font-family: "clarkeoblique";
   src: url("../fonts/CLARKE-regular-oblique-v5.3-webfont.eot");
   src: url("../fonts/CLARKE-regular-oblique-v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.svg#clarkeregular") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -295,7 +303,7 @@ a:hover, a.active {
 
 #name-and-slogan {
   text-align: center;
-  margin: 100px 0 60px;
+  margin: 165px 0 75px;
 }
 
 #site-name {
@@ -335,14 +343,16 @@ a:hover, a.active {
 
 #block-views-artists-block {
   text-align: center;
-  margin-bottom: 65px;
+  z-index: 99;
+  background-color: #000;
+  height: 30px;
+  font-size: 22px;
 }
 #block-views-artists-block .views-row {
   display: inline-block;
   margin: 0 20px;
   font-family: "clarkeregular";
   position: relative;
-  font-size: 22px;
 }
 #block-views-artists-block .views-row:after {
   content: "+";
@@ -364,9 +374,99 @@ a:hover, a.active {
   display: none;
 }
 
-.group-left .field-name-field-photo img {
-  width: 320px;
+.node-type-artist .group-header .field-name-title {
+  font-family: "clarkelight";
+}
+.node-type-artist .group-left {
+  width: 33.333%;
+}
+.node-type-artist .group-left .field-name-field-photo img {
+  width: 100%;
+  max-width: 320px;
   height: auto;
+}
+.node-type-artist .group-right {
+  width: 66.666%;
+  padding-left: 35px;
+}
+.node-type-artist #block-system-main {
+  margin-bottom: 65px;
+}
+
+#block-views-news-block {
+  padding-top: 65px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#block-views-news-block .views-row {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+}
+#block-views-news-block .views-row .field-name-title {
+  font-family: "clarkelight";
+}
+#block-views-news-block .views-row .field-name-field-images {
+  margin-bottom: 25px;
+}
+
+.field-name-social-links {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.field-name-social-links .views-row .views-field {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}
+.field-name-social-links .views-row .views-field a {
+  display: inline-block;
+  font-size: 0;
+  color: #000;
+  height: 35px;
+  width: 35px;
+  position: relative;
+}
+.field-name-social-links .views-row .views-field a:before {
+  font-family: "FontAwesome";
+  color: #ccc;
+  position: absolute;
+  font-size: 35px;
+  transition: all 0.3s;
+}
+.field-name-social-links .views-row .views-field a:hover:before {
+  color: #fff;
+}
+.field-name-social-links .views-row .views-field-field-instagram a:before {
+  content: "";
+}
+.field-name-social-links .views-row .views-field-field-tumblr a:before {
+  content: "";
+}
+.field-name-social-links .views-row .views-field-field-facebook a:before {
+  content: "";
+}
+.field-name-social-links .views-row .views-field-field-twitter a:before {
+  content: "";
+}
+.field-name-social-links .views-row .views-field-field-email a:before {
+  content: "";
+}
+
+.not-front #block-system-main {
+  padding-top: 65px;
+}
+
+.section-about #block-system-main,
+.section-store #block-system-main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-store .field-name-body h1 {
+  text-align: center;
+  font-family: "clarkeregular";
 }
 
 * {
