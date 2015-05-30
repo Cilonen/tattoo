@@ -469,6 +469,13 @@ a:hover, a.active {
   font-family: "clarkeregular";
 }
 
+#block-views-portfolio_items-block {
+  text-align: center;
+}
+#block-views-portfolio_items-block .views-row {
+  margin-bottom: 25px;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
