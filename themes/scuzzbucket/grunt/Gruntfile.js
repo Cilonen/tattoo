@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     style: 'expanded', // This controls the compiled css and can be changed to nested, compact or compressed
-                    sourcemap: 'true',
+                    sourcemap: 'file',
                     require: 'sass-globbing',
                 },
                 files: [{

@@ -26,6 +26,7 @@ features[] = main_menu
 features[] = secondary_menu
 
 ; Stylesheets
+stylesheets[all][] = js/build/instalink/instalink-2.0.7.min.css
 stylesheets[all][] = css/default.css
 stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/style.css
@@ -33,6 +34,7 @@ stylesheets[all][] = css/normalize.css
 stylesheets[print][] = css/print.css
 
 ; Scripts
+scripts[] = js/build/instalink/instalink-2.0.7.min.js
 scripts[] = js/build/scripts.js
 scripts[] = js/build/modernizr.js
 scripts[] = js/build/skrollr.js
