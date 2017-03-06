@@ -1,389 +1,84 @@
-@charset "UTF-8";
-body {
-  margin: 0;
-  font: 16px/1.5em "Helvetica Neue", helvetica, Arial, sans-serif;
-  letter-spacing: 0.03em;
-  background-color: #fff;
-  color: #ccc; }
+/*
+Error: File to import not found or unreadable: blocks/_blocks.default.sass.
+       Load paths:
+         /Users/Robotism/Sites/tattoo/themes/scuzzbucket
+         Sass::Globbing::Importer
+        on line 1 of sass/blocks/*
+        from line 200 of sass/_custom.sass
+        from line 159 of sass/style.sass
 
-a:link, a:visited {
-  color: blue;
-  text-decoration: none; }
+1: // Font styles.
+2: body
+3:   margin: 0
+4:   // Setting up font size, leading and font family
+5:   //  http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography
+6:   font: 16px / 1.5em "Helvetica Neue", helvetica, Arial, sans-serif
 
-a:hover, a:active {
-  color: red;
-  text-decoration: underline; }
-
-#site-name {
-  font-size: 2.2em;
-  line-height: 1.3em;
-  font-weight: 300;
-  padding: 0 0 0.5em;
-  margin: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.3em; }
-
-h1 {
-  font-size: 2.2em;
-  font-weight: 300;
-  padding: 0 0 0.5em;
-  margin: 0; }
-
-h2 {
-  font-size: 1.8em;
-  font-weight: 300;
-  margin-bottom: 0.75em; }
-
-h3 {
-  font-size: 1.4em;
-  margin-bottom: 1em; }
-
-h4 {
-  font-size: 1.2em;
-  margin-bottom: 0.8em; }
-
-h5 {
-  font-size: 1.1em;
-  font-weight: 600;
-  margin-bottom: 0; }
-
-h6 {
-  font-size: 1em;
-  font-weight: bold; }
-
-p {
-  margin: 0 0 1em 0; }
-
-ul, ol {
-  margin-left: 0;
-  padding-left: 0; }
-
-table {
-  width: 99%; }
-
-tr.even td,
-tr.odd td {
-  padding: 10px 5px; }
-
-tr.odd {
-  background-color: white; }
-
-pre, code, tt {
-  font: 1em "andale mono", "lucida console", monospace;
-  line-height: 1.5; }
-
-pre {
-  background-color: #efefef;
-  display: block;
-  padding: 5px;
-  margin: 5px 0;
-  border: 1px solid #aaaaaa; }
-
-ul {
-  list-style-type: disc; }
-  ul ul {
-    list-style-type: circle; }
-    ul ul ul {
-      list-style-type: square; }
-      ul ul ul ul {
-        list-style-type: circle; }
-
-ol {
-  list-style-type: decimal; }
-  ol ol {
-    list-style-type: lower-alpha; }
-    ol ol ol {
-      list-style-type: decimal; }
-
-abbr {
-  border-bottom: 1px dotted #666666;
-  cursor: help;
-  white-space: nowrap; }
-
-#edit-title {
-  font-size: 24px;
-  width: 99%; }
-
-#system-themes-form img {
-  width: 100px; }
-
-.form-item .description {
-  font-style: italic;
-  line-height: 1.2em;
-  font-size: 0.8em;
-  margin-top: 5px;
-  color: #777777; }
-
-#edit-delete {
-  color: #cc0000; }
-
-div.messages {
-  padding: 9px;
-  margin: 1em 0;
-  color: #003366;
-  background: #bbddff;
-  border: 1px solid #aaccee; }
-
-div.warning {
-  color: #884400;
-  background: #ffee66;
-  border-color: #eedd55; }
-
-div.error {
-  color: white;
-  background: #ee6633;
-  border-color: #dd5522; }
-
-div.status {
-  color: #336600;
-  background: #ccff88;
-  border-color: #bbee77; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: "clarkeblack_oblique";
-  src: url("../fonts/CLARKE black oblique v5.3-webfont.eot");
-  src: url("../fonts/CLARKE black oblique v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE black oblique v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE black oblique v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE black oblique v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE black oblique v5.3-webfont.svg#clarkeblack_oblique") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: "clarkeblack";
-  src: url("../fonts/CLARKE black v5.3-webfont.eot");
-  src: url("../fonts/CLARKE black v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE black v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE black v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE black v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE black v5.3-webfont.svg#clarkeblack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "clarkelight_oblique";
-  src: url("../fonts/CLARKE light oblique v5.3-webfont.eot");
-  src: url("../fonts/CLARKE light oblique v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE light oblique v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE light oblique v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE light oblique v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE light oblique v5.3-webfont.svg#clarkelight_oblique") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: "clarkelight";
-  src: url("../fonts/CLARKE light v5.3-webfont.eot");
-  src: url("../fonts/CLARKE light v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE light v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE light v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE light v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE light v5.3-webfont.svg#clarkelight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "clarkemedium_oblique";
-  src: url("../fonts/CLARKE medium oblique v5.3-webfont.eot");
-  src: url("../fonts/CLARKE medium oblique v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE medium oblique v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE medium oblique v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE medium oblique v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE medium oblique v5.3-webfont.svg#clarkemedium_oblique") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: "clarkemedium";
-  src: url("../fonts/CLARKE medium v5.3-webfont.eot");
-  src: url("../fonts/CLARKE medium v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE medium v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE medium v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE medium v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE medium v5.3-webfont.svg#clarkemedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "clarkeregular";
-  src: url("../fonts/CLARKE-regular-v5.3-webfont.eot");
-  src: url("../fonts/CLARKE-regular-v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE-regular-v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE-regular-v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE-regular-v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE-regular-v5.3-webfont.svg#clarkeoblique") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "clarkeoblique";
-  src: url("../fonts/CLARKE-regular-oblique-v5.3-webfont.eot");
-  src: url("../fonts/CLARKE-regular-oblique-v5.3-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.woff2") format("woff2"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.woff") format("woff"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.ttf") format("truetype"), url("../fonts/CLARKE-regular-oblique-v5.3-webfont.svg#clarkeregular") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: "FontAwesome";
-  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-body {
-  background-color: #000; }
-
-a:link, a:visited {
-  color: #ccc; }
-
-a:hover, a.active {
-  text-decoration: none;
-  color: #fff; }
-
-#page {
-  margin-top: 64px; }
-  .admin-menu #page {
-    margin-top: 85px; }
-
-#header {
-  position: fixed;
-  background-color: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99; }
-  .admin-menu #header {
-    top: 21px; }
-
-#block-menu_block-2, #block-menu_block-3 {
-  text-align: center;
-  font-family: "clarkeregular";
-  font-size: 22px; }
-  #block-menu_block-2 ul.menu li, #block-menu_block-3 ul.menu li {
-    display: inline-block;
-    margin: 0;
-    padding: 0; }
-    #block-menu_block-2 ul.menu li a, #block-menu_block-3 ul.menu li a {
-      transition: all 0.3s;
-      margin: 0 15px; }
-    #block-menu_block-2 ul.menu li a:hover, #block-menu_block-2 ul.menu li a.active, #block-menu_block-3 ul.menu li a:hover, #block-menu_block-3 ul.menu li a.active {
-      color: #fff; }
-
-#block-menu_block-2 ul.menu li a {
-  margin-right: 14px; }
-
-#block-menu_block-3 ul.menu li a {
-  margin-left: 14px; }
-
-#name-and-slogan {
-  text-align: center;
-  margin: 165px 0 75px; }
-
-#site-name {
-  padding-bottom: 0; }
-  #site-name a {
-    font-size: 0;
-    display: inline-block;
-    width: 575px;
-    background: url(../logo.svg) no-repeat 0 0;
-    height: 161px;
-    background-size: 100%; }
-
-#header-region {
-  text-align: center; }
-  #header-region .block {
-    display: inline-block; }
-
-#block-boxes-logo {
-  margin-top: 15px; }
-  #block-boxes-logo p {
-    margin: 0; }
-  #block-boxes-logo a.home-link {
-    font-size: 0;
-    background: url(../logo.svg) no-repeat 0 0;
-    display: block;
-    background-size: 100%;
-    width: 0px;
-    height: 32px;
-    background-position: 0 1px; }
-
-#block-views-artists-block {
-  text-align: center;
-  z-index: 99;
-  background-color: #000;
-  height: 30px;
-  font-size: 22px; }
-  #block-views-artists-block .views-row {
-    display: inline-block;
-    margin: 0 20px;
-    font-family: "clarkeregular";
-    position: relative; }
-    #block-views-artists-block .views-row:after {
-      content: "+";
-      position: absolute;
-      top: 0px;
-      right: -30px;
-      font-size: 38px;
-      color: #fff;
-      line-height: 22px; }
-    #block-views-artists-block .views-row a {
-      transition: all 0.3s; }
-      #block-views-artists-block .views-row a:hover {
-        color: #fff;
-        text-decoration: none; }
-  #block-views-artists-block .views-row-last:after {
-    display: none; }
-
-.node-type-artist .node-artist {
-  padding: 23px; }
-.node-type-artist .group-header .field-name-title {
-  font-family: "clarkelight"; }
-.node-type-artist .group-left {
-  width: 33.333%; }
-  .node-type-artist .group-left .field-name-field-photo img {
-    width: 100%;
-    max-width: 320px;
-    height: auto; }
-.node-type-artist .group-right {
-  width: 66.666%;
-  padding-left: 35px; }
-.node-type-artist #block-system-main {
-  margin-bottom: 65px; }
-
-#block-views-news-block {
-  padding-top: 65px;
-  max-width: 600px;
-  margin: 0 auto; }
-  #block-views-news-block .views-row {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 15px;
-    margin-bottom: 45px; }
-    #block-views-news-block .views-row .field-name-title {
-      font-family: "clarkelight"; }
-    #block-views-news-block .views-row .field-name-field-images {
-      margin-bottom: 25px; }
-
-.field-name-social-links {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 10px; }
-  .field-name-social-links .views-row .views-field {
-    display: inline-block;
-    float: left;
-    margin-right: 15px; }
-    .field-name-social-links .views-row .views-field a {
-      display: inline-block;
-      font-size: 0;
-      color: #000;
-      height: 35px;
-      width: 35px;
-      position: relative; }
-      .field-name-social-links .views-row .views-field a:before {
-        font-family: "FontAwesome";
-        color: #ccc;
-        position: absolute;
-        font-size: 35px;
-        transition: all 0.3s; }
-      .field-name-social-links .views-row .views-field a:hover:before {
-        color: #fff; }
-  .field-name-social-links .views-row .views-field-field-instagram a:before {
-    content: ""; }
-  .field-name-social-links .views-row .views-field-field-tumblr a:before {
-    content: ""; }
-  .field-name-social-links .views-row .views-field-field-facebook a:before {
-    content: ""; }
-  .field-name-social-links .views-row .views-field-field-twitter a:before {
-    content: ""; }
-  .field-name-social-links .views-row .views-field-field-email a:before {
-    content: ""; }
-
-.not-front #block-system-main {
-  padding-top: 65px; }
-
-.section-about #block-system-main,
-.section-store #block-system-main {
-  max-width: 600px;
-  margin: 0 auto; }
-
-.section-store .field-name-body h1 {
-  text-align: center;
-  font-family: "clarkeregular"; }
-
-#block-views-portfolio_items-block {
-  text-align: center; }
-  #block-views-portfolio_items-block .views-row {
-    margin-bottom: 25px; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+Backtrace:
+sass/blocks/*:1
+sass/_custom.sass:200
+sass/style.sass:159
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:308:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:308:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:308:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:305:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:308:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:308:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:308:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:305:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/exec/sass_scss.rb:375:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/exec/base.rb:40:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.0/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: blocks/_blocks.default.sass.\A        Load paths:\A          /Users/Robotism/Sites/tattoo/themes/scuzzbucket\A          Sass::Globbing::Importer\A         on line 1 of sass/blocks/*\A         from line 200 of sass/_custom.sass\A         from line 159 of sass/style.sass\A \A 1: // Font styles.\A 2: body\A 3:   margin: 0\A 4:   // Setting up font size, leading and font family\A 5:   //  http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography\A 6:   font: 16px / 1.5em \"Helvetica Neue\", helvetica, Arial, sans-serif"; }
