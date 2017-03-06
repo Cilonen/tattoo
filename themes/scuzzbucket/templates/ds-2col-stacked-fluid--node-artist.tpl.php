@@ -40,7 +40,7 @@
 
 <div data-il
      data-il-api="/sites/all/themes/scuzzbucket/js/build/instalink/api/"
-     data-il-username="scargods"
+     data-il-username="<?php print $node->field_instagram_user_id['und'][0]['value']; ?>"
      data-il-hashtag=""
      data-il-lang="en"
      data-il-show-heading="false"
