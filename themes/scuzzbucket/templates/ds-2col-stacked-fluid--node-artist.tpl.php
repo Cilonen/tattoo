@@ -38,9 +38,9 @@
 
 </<?php print $layout_wrapper ?>>
 
-<div data-il 
+<div data-il
      data-il-api="/sites/all/themes/scuzzbucket/js/build/instalink/api/"
-     data-il-username="stargods"
+     data-il-username="scargods"
      data-il-hashtag=""
      data-il-lang="en"
      data-il-show-heading="false"
