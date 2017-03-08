@@ -271,6 +271,9 @@ a:hover, a.active {
   right: 0;
   z-index: 99;
 }
+#header .calendar {
+  width: auto;
+}
 .admin-menu #header {
   top: 21px;
 }
